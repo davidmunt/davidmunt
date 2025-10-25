@@ -1,0 +1,32 @@
+name: Update GitHub Profile Metrics
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 1 1,4,7,10 *"
+  push:
+    branches: [main]
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Generate metrics image
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics.classic.svg
+          template: classic
+          plugin_languages: yes
+          plugin_repositories: yes
+          plugin_lines: yes
+          plugin_languages_limit: 8
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics.classic.svg
+          git commit -m "chore: update profile metrics" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
