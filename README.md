@@ -16,12 +16,6 @@ Soy una persona responsable, curiosa y con ganas de crecer profesionalmente en e
 
 ###
 
-<div align="center">
-  <img height="200" src="https://media.giphy.com/media/QMHoU66sBXqqLqYvGO/giphy.gif" />
-</div>
-
-###
-
 <p align="center">Lenguajes</p>
 
 ###
