@@ -20,19 +20,15 @@ jobs:
           filename: github-metrics.svg
           output_action: readme
 
-          base: activity, repositories, metadata
+          base: repositories, metadata
           config_timezone: Europe/Madrid
-
-          plugin_activity: true
-          plugin_activity_days: 365
-          plugin_activity_filter: all
 
           plugin_languages: true
           plugin_languages_details: percentage
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
           plugin_languages_limit: 8
-          plugin_languages_ignored: "HTML,CSS"
+          plugin_languages_ignored: "HTML,CSS,CMake,Visual Basic 6.0"
 
           plugin_repositories: true
           plugin_repositories_featured: "TicketWay,V-Stats,swapify-app,swapify-backend"
