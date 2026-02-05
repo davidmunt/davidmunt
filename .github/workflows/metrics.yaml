@@ -22,7 +22,7 @@ jobs:
           output_action: "readme"
           filename: "github-metrics.svg"
 
-          base: "header, activity, community, repositories, metadata"
+          base: "activity, repositories, metadata"
 
           config_timezone: Europe/Madrid
 
@@ -31,3 +31,7 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
           plugin_languages_ignored: "HTML,CSS"
+          plugin_activity: true
+          plugin_activity_days: 365
+          plugin_activity_filter: all
+
