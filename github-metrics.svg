@@ -257,7 +257,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>davidmunt/V-Stats</span>
-                                        <span>created 28 days ago</span>
+                                        <span>created 29 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">
@@ -398,7 +398,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 7 Feb 2026, 02:05:14 (timezone Europe/Madrid) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 8 Feb 2026, 02:27:41 (timezone Europe/Madrid) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
